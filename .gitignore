@@ -1,3 +1,3 @@
 # Distribution / packaging
 .idea/
-log/*.log
+*.log
