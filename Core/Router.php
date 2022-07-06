@@ -16,6 +16,10 @@ class Router
       list($params['controller'] , $params['method']) = explode('@',$action);
        $this->routes[$route] = $params;
     }
+
+    /**
+     * @throws \Exception
+     */
     public function dispatch($url){
 
         $url = $this->removeVariblesOfQueryString($url);
@@ -26,19 +30,23 @@ class Router
                 $controller_object= new $controller;
                 $method = $this->params['method'];
                 if(is_callable([$controller_object , $method])){
-                    echo call_user_func_array([$controller_object,$method],$this->params['params']);
+                    if ($controller_object->before() == true){
+                        echo call_user_func_array([$controller_object,$method],$this->params['params']);
+                        $controller_object->after();
+                    }
+
                 }else{
-                    die("method {$method} (in controller {$controller}) not found");
+                    throw new \Exception("method {$method} (in controller {$controller}) not found");
                 }
 
             }else{
-                die("controller class {$controller} not found");
+                throw new \Exception("controller class {$controller} not found");
             }
 
 
 
         }else{
-            die("no route matched");
+            throw new \Exception( "no route matched",404);
         }
     }
     public function getRoutes(){

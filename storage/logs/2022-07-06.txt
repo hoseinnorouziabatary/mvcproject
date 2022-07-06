@@ -1,0 +1,16 @@
+[06-Jul-2022 14:53:39 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : no route matched</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('sxeries/learnin...')
+#1 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 45</p>
+
+[06-Jul-2022 14:54:26 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : no route matched</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('sxeries/learnin...')
+#1 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 45</p>
+
