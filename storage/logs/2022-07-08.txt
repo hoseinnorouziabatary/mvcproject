@@ -1,0 +1,132 @@
+[08-Jul-2022 20:34:33 Europe/Berlin] 
+<h1>Fatal error</h1>
+<p>Uncaught exception: 'ErrorException'</p>
+<p>Message : 'preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated'</p>
+<p>Stack trace: <pre>#0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>Thrown in 'C:\xampp\htdocs\mvcproject\Core\Router.php' on line 59</p>
+
+[08-Jul-2022 21:00:30 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[08-Jul-2022 21:04:21 Europe/Berlin] 
+<h1>Fatal error</h1>
+<p>Uncaught exception: 'ErrorException'</p>
+<p>Message : 'preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated'</p>
+<p>Stack trace: <pre>#0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>Thrown in 'C:\xampp\htdocs\mvcproject\Core\Router.php' on line 59</p>
+
+[08-Jul-2022 21:05:09 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[08-Jul-2022 21:05:39 Europe/Berlin] 
+<h1>Fatal error</h1>
+<p>Uncaught exception: 'ErrorException'</p>
+<p>Message : 'preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated'</p>
+<p>Stack trace: <pre>#0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>Thrown in 'C:\xampp\htdocs\mvcproject\Core\Router.php' on line 59</p>
+
+[08-Jul-2022 21:06:01 Europe/Berlin] 
+<h1>Fatal error</h1>
+<p>Uncaught exception: 'ErrorException'</p>
+<p>Message : 'preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated'</p>
+<p>Stack trace: <pre>#0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>Thrown in 'C:\xampp\htdocs\mvcproject\Core\Router.php' on line 59</p>
+
+[08-Jul-2022 21:06:21 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[08-Jul-2022 21:06:53 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[08-Jul-2022 21:07:55 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[08-Jul-2022 21:08:29 Europe/Berlin] 
+<h1>Fatal error</h1>
+<p>Uncaught exception: 'ErrorException'</p>
+<p>Message : 'preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated'</p>
+<p>Stack trace: <pre>#0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>Thrown in 'C:\xampp\htdocs\mvcproject\Core\Router.php' on line 59</p>
+
+[08-Jul-2022 21:08:41 Europe/Berlin] 
+<h1>Fatal error</h1>
+<p>Uncaught exception: 'ErrorException'</p>
+<p>Message : 'preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated'</p>
+<p>Stack trace: <pre>#0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>Thrown in 'C:\xampp\htdocs\mvcproject\Core\Router.php' on line 59</p>
+
+[08-Jul-2022 21:09:21 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+

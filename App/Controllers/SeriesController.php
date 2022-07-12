@@ -1,6 +1,7 @@
 <?php namespace App\Controllers;
 
 use Core\Controller;
+use Core\View;
 
 class SeriesController extends Controller
 {
@@ -12,6 +13,9 @@ class SeriesController extends Controller
         return "serie page";
     }
     public function episode($slug,$id){
-        return "slug : {$slug} id: {$id}";
+        return View::render("series/episode",[
+            "slug"=> $slug,
+            "id"=>$id
+        ]);
     }
 }

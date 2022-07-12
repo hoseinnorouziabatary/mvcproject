@@ -1,0 +1,625 @@
+[09-Jul-2022 22:50:49 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[09-Jul-2022 22:50:49 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(38): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 22:50:50 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[09-Jul-2022 22:50:50 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(38): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 22:50:52 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : no route matched</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('favicon.ico')
+#1 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 50</p>
+
+[09-Jul-2022 22:50:52 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/404.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(38): Core\View::render('errors/404')
+#1 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 22:51:51 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[09-Jul-2022 22:51:51 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:19
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(38): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 19
+[09-Jul-2022 22:51:52 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[09-Jul-2022 22:51:52 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:19
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(38): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 19
+[09-Jul-2022 22:52:42 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[09-Jul-2022 22:52:42 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:19
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 19
+[09-Jul-2022 22:53:17 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[09-Jul-2022 22:53:46 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[09-Jul-2022 22:54:44 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[09-Jul-2022 22:54:45 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 59)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(59): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(26): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 59</p>
+
+[09-Jul-2022 23:17:16 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(72): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(39): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 72</p>
+
+[09-Jul-2022 23:17:16 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:14
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 14
+[09-Jul-2022 23:17:39 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(72): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(39): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 72</p>
+
+[09-Jul-2022 23:17:39 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:18:14 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(72): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(39): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 72</p>
+
+[09-Jul-2022 23:18:33 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(72): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(39): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 72</p>
+
+[09-Jul-2022 23:18:49 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(72): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(39): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 72</p>
+
+[09-Jul-2022 23:19:09 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(72): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(39): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 72</p>
+
+[09-Jul-2022 23:19:09 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:19
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 19
+[09-Jul-2022 23:19:38 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(72): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(39): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 72</p>
+
+[09-Jul-2022 23:20:17 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(72): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(39): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 72</p>
+
+[09-Jul-2022 23:20:17 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:21:04 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(72): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(39): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 72</p>
+
+[09-Jul-2022 23:21:04 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:21:05 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(72): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(39): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 72</p>
+
+[09-Jul-2022 23:21:05 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:21:06 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 72)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(72): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(39): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 72</p>
+
+[09-Jul-2022 23:21:06 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:21:58 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : Undefined array key "/^\/?$/i"</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\Core\Router.php(30): Core\Error::errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 30)
+#1 C:\xampp\htdocs\mvcproject\App\Router.php(5): Core\Router->add('/^\\/?$/i', 'HomeController@...')
+#2 C:\xampp\htdocs\mvcproject\public\index.php(8): require('C:\\xampp\\htdocs...')
+#3 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 30</p>
+
+[09-Jul-2022 23:21:58 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:23:29 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : Undefined array key "/^\/?$/i"</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\Core\Router.php(31): Core\Error::errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 31)
+#1 C:\xampp\htdocs\mvcproject\App\Router.php(5): Core\Router->add('/^\\/?$/i', 'HomeController@...')
+#2 C:\xampp\htdocs\mvcproject\public\index.php(8): require('C:\\xampp\\htdocs...')
+#3 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 31</p>
+
+[09-Jul-2022 23:23:29 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:34:44 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 38)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(38): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(55): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 38</p>
+
+[09-Jul-2022 23:34:44 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:51:00 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(55): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:51:00 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:51:05 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(55): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:51:05 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:52:26 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(55): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:52:26 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:52:31 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(55): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:52:31 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:52:34 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(55): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:52:34 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:52:35 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(55): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:52:35 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:52:59 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(55): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:52:59 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:53:00 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(55): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:53:00 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:53:34 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(55): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:53:34 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:53:43 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(55): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:53:43 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:54:07 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(55): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:54:07 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:55:44 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(54): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:55:44 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:55:57 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(54): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:55:57 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:56:57 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : Undefined array key "controller"</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\Core\Router.php(56): Core\Error::errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 56)
+#1 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#2 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 56</p>
+
+[09-Jul-2022 23:56:57 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:57:32 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(54): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:57:32 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
+[09-Jul-2022 23:59:00 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : ErrorException</p>
+<p>message : preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated</p>
+<p> Stack trace :<pre> #0 [internal function]: Core\Error::errorHandler(8192, 'preg_match(): P...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\mvcproject\Core\Router.php(36): preg_match('/^\\/?$/i', NULL, NULL)
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(54): Core\Router->match(NULL)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch(NULL)
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\Router.php}  on line 36</p>
+
+[09-Jul-2022 23:59:00 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:17
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(ErrorException))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 17
