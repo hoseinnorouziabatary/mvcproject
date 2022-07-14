@@ -1,0 +1,349 @@
+[13-Jul-2022 23:04:51 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/series/episode.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\SeriesController.php(18): Core\View::render('series/episode', Array)
+#1 [internal function]: App\Controllers\SeriesController->episode('learning-php', '2')
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('series/learning...')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:04:51 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:19
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 19
+[13-Jul-2022 23:05:01 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:05:01 Europe/Berlin] PHP Fatal error:  Uncaught Exception: ../App/Views/errors/500.php not found in C:\xampp\htdocs\mvcproject\Core\View.php:19
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\Core\Error.php(41): Core\View::render('errors/500')
+#1 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#2 {main}
+  thrown in C:\xampp\htdocs\mvcproject\Core\View.php on line 19
+[13-Jul-2022 23:22:46 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:22:46 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(45): Core\View::renderTemplate('/errors . 500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:23:25 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:23:25 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(45): Core\View::renderTemplate('/errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:23:26 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:23:26 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(45): Core\View::renderTemplate('/errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:24:26 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:24:26 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(45): Core\View::renderTemplate('/errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:30:38 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:30:38 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(45): Core\View::renderTemplate('errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:30:39 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:30:39 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(45): Core\View::renderTemplate('errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:30:40 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:30:40 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(45): Core\View::renderTemplate('errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:30:52 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:30:52 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(45): Core\View::renderTemplate('errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:30:56 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:30:56 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(45): Core\View::renderTemplate('errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:34:56 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:34:56 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(45): Core\View::renderTemplate('errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:35:19 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:35:19 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(45): Core\View::renderTemplate('errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:36:56 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/series/episode.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\SeriesController.php(18): Core\View::render('series/episode', Array)
+#1 [internal function]: App\Controllers\SeriesController->episode('learning-php', '2')
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('series/learning...')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:36:56 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(45): Core\View::renderTemplate('errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:38:33 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:38:33 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(42): Core\View::renderTemplate('errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:40:01 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:40:01 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(39): Core\View::renderTemplate('errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45
+[13-Jul-2022 23:40:49 Europe/Berlin] 
+<b>Fatal error</b></br>
+<p> Uncaught Exception : Exception</p>
+<p>message : ../App/Views/index.php not found</p>
+<p> Stack trace :<pre> #0 C:\xampp\htdocs\mvcproject\App\Controllers\HomeController.php(11): Core\View::render('index')
+#1 [internal function]: App\Controllers\HomeController->index()
+#2 C:\xampp\htdocs\mvcproject\Core\Router.php(63): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\mvcproject\public\index.php(9): Core\Router->dispatch('')
+#4 {main}</pre></p>
+<p>  Thrown in C:\xampp\htdocs\mvcproject\Core\View.php}  on line 19</p>
+
+[13-Jul-2022 23:40:49 Europe/Berlin] PHP Fatal error:  Uncaught ErrorException: Optional parameter $viewPaths declared before required parameter $cachePath is implicitly treated as a required parameter in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php:45
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): Core\Error::errorHandler(8192, 'Optional parame...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(571): include()
+#2 C:\xampp\htdocs\mvcproject\vendor\composer\ClassLoader.php(428): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\mvcproject\Core\View.php(28): Composer\Autoload\ClassLoader->loadClass('Philo\\Blade\\Bla...')
+#4 C:\xampp\htdocs\mvcproject\Core\Error.php(45): Core\View::renderTemplate('errors.500')
+#5 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject\vendor\philo\laravel-blade\src\Blade.php on line 45

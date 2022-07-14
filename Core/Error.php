@@ -21,7 +21,7 @@ class Error
 
         http_response_code($code);
 
-        if(false){
+        if(true){
             echo "<h1>Fatal error</h1>";
             echo "<p>Uncaught exception: '" . get_class($exception) . "'</p>";
             echo "<p>Message : '" . $exception->getMessage() . "'</p>";
@@ -38,7 +38,11 @@ class Error
             $message .= "<p>  Thrown in {$exception->getFile()}}  on line {$exception->getLine()}</p>\n";
 
             error_log($message);
-            echo View::render("errors/{$code}");
+
+            /*  Previous code for manual view */
+//            echo View::render("errors/{$code}");
+
+            echo View::renderTemplate("errors.{$code}");
 
 
         }

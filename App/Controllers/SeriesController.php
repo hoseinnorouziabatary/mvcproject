@@ -13,7 +13,12 @@ class SeriesController extends Controller
         return "serie page";
     }
     public function episode($slug,$id){
-        return View::render("series/episode",[
+
+        /*
+         * code view manual
+         *  return View::render("series/episode",[
+         */
+        return View::renderTemplate("series.episode",[
             "slug"=> $slug,
             "id"=>$id
         ]);

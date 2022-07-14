@@ -7,8 +7,12 @@ class HomeController extends Controller
 {
     public function index()
     {
+        /*
+         * code view manual
+         return View::render("index");
+         */
 
-        return View::render("index");
+        return View::renderTemplate("index");
 
     }
 
