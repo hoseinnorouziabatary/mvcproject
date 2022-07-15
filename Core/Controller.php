@@ -1,6 +1,6 @@
 <?php namespace Core;
 
-class Controller
+abstract class Controller
 {
     public function before(){
         return true;
