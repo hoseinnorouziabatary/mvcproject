@@ -39,14 +39,6 @@ interface Gate
     public function before(callable $callback);
 
     /**
-     * Register a callback to run after all Gate checks.
-     *
-     * @param  callable  $callback
-     * @return $this
-     */
-    public function after(callable $callback);
-
-    /**
      * Determine if the given ability should be granted for the current user.
      *
      * @param  string  $ability
@@ -65,43 +57,13 @@ interface Gate
     public function denies($ability, $arguments = []);
 
     /**
-     * Determine if all of the given abilities should be granted for the current user.
-     *
-     * @param  iterable|string  $abilities
-     * @param  array|mixed  $arguments
-     * @return bool
-     */
-    public function check($abilities, $arguments = []);
-
-    /**
-     * Determine if any one of the given abilities should be granted for the current user.
-     *
-     * @param  iterable|string  $abilities
-     * @param  array|mixed  $arguments
-     * @return bool
-     */
-    public function any($abilities, $arguments = []);
-
-    /**
-     * Determine if the given ability should be granted for the current user.
+     * Determine if the given ability should be granted.
      *
      * @param  string  $ability
      * @param  array|mixed  $arguments
-     * @return \Illuminate\Auth\Access\Response
-     *
-     * @throws \Illuminate\Auth\Access\AuthorizationException
+     * @return bool
      */
-    public function authorize($ability, $arguments = []);
-
-    /**
-     * Get a policy instance for a given class.
-     *
-     * @param  object|string  $class
-     * @return mixed
-     *
-     * @throws \InvalidArgumentException
-     */
-    public function getPolicyFor($class);
+    public function check($ability, $arguments = []);
 
     /**
      * Get a guard instance for the given user.
@@ -110,11 +72,4 @@ interface Gate
      * @return static
      */
     public function forUser($user);
-
-    /**
-     * Get all of the defined abilities.
-     *
-     * @return array
-     */
-    public function abilities();
 }

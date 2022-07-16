@@ -99,17 +99,6 @@ class Filesystem
     }
 
     /**
-     * Get the MD5 hash of the file at the given path.
-     *
-     * @param  string  $path
-     * @return string
-     */
-    public function hash($path)
-    {
-        return md5_file($path);
-    }
-
-    /**
      * Write the contents of a file.
      *
      * @param  string  $path
@@ -148,22 +137,6 @@ class Filesystem
     public function append($path, $data)
     {
         return file_put_contents($path, $data, FILE_APPEND);
-    }
-
-    /**
-     * Get or set UNIX mode of a file or directory.
-     *
-     * @param  string  $path
-     * @param  int  $mode
-     * @return mixed
-     */
-    public function chmod($path, $mode = null)
-    {
-        if ($mode) {
-            return chmod($path, $mode);
-        }
-
-        return substr(sprintf('%o', fileperms($path)), -4);
     }
 
     /**
@@ -213,24 +186,6 @@ class Filesystem
     public function copy($path, $target)
     {
         return copy($path, $target);
-    }
-
-    /**
-     * Create a hard link to the target file or directory.
-     *
-     * @param  string  $target
-     * @param  string  $link
-     * @return void
-     */
-    public function link($target, $link)
-    {
-        if (! windows_os()) {
-            return symlink($target, $link);
-        }
-
-        $mode = $this->isDirectory($target) ? 'J' : 'H';
-
-        exec("mklink /{$mode} \"{$link}\" \"{$target}\"");
     }
 
     /**
@@ -333,17 +288,6 @@ class Filesystem
     }
 
     /**
-     * Determine if the given path is readable.
-     *
-     * @param  string  $path
-     * @return bool
-     */
-    public function isReadable($path)
-    {
-        return is_readable($path);
-    }
-
-    /**
      * Determine if the given path is writable.
      *
      * @param  string  $path
@@ -381,15 +325,22 @@ class Filesystem
      * Get an array of all files in a directory.
      *
      * @param  string  $directory
-     * @param  bool  $hidden
-     * @return \Symfony\Component\Finder\SplFileInfo[]
+     * @return array
      */
-    public function files($directory, $hidden = false)
+    public function files($directory)
     {
-        return iterator_to_array(
-            Finder::create()->files()->ignoreDotFiles(! $hidden)->in($directory)->depth(0),
-            false
-        );
+        $glob = glob($directory.'/*');
+
+        if ($glob === false) {
+            return [];
+        }
+
+        // To get the appropriate files, we'll simply glob the directory and filter
+        // out any "files" that are not truly files so we do not end up with any
+        // directories in our list, but only true files within the directory.
+        return array_filter($glob, function ($file) {
+            return filetype($file) == 'file';
+        });
     }
 
     /**
@@ -397,14 +348,11 @@ class Filesystem
      *
      * @param  string  $directory
      * @param  bool  $hidden
-     * @return \Symfony\Component\Finder\SplFileInfo[]
+     * @return array
      */
     public function allFiles($directory, $hidden = false)
     {
-        return iterator_to_array(
-            Finder::create()->files()->ignoreDotFiles(! $hidden)->in($directory),
-            false
-        );
+        return iterator_to_array(Finder::create()->files()->ignoreDotFiles(! $hidden)->in($directory), false);
     }
 
     /**

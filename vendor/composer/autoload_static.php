@@ -4,12 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit973742a25df6072f8a2b92330650238f
+class ComposerStaticInit2e3db11dd6a449f0058f74dc8ee1c5e5
 {
     public static $files = array (
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -24,9 +24,7 @@ class ComposerStaticInit973742a25df6072f8a2b92330650238f
         ),
         'P' => 
         array (
-            'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
-            'Psr\\Container\\' => 14,
             'Philo\\Blade\\' => 12,
         ),
         'I' => 
@@ -35,6 +33,7 @@ class ComposerStaticInit973742a25df6072f8a2b92330650238f
             'Illuminate\\Support\\' => 19,
             'Illuminate\\Filesystem\\' => 22,
             'Illuminate\\Events\\' => 18,
+            'Illuminate\\Database\\' => 20,
             'Illuminate\\Contracts\\' => 21,
             'Illuminate\\Container\\' => 21,
         ),
@@ -78,17 +77,9 @@ class ComposerStaticInit973742a25df6072f8a2b92330650238f
         array (
             0 => __DIR__ . '/..' . '/symfony/debug',
         ),
-        'Psr\\SimpleCache\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
-        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
-        ),
-        'Psr\\Container\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/container/src',
         ),
         'Philo\\Blade\\' => 
         array (
@@ -109,6 +100,10 @@ class ComposerStaticInit973742a25df6072f8a2b92330650238f
         'Illuminate\\Events\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/events',
+        ),
+        'Illuminate\\Database\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/database',
         ),
         'Illuminate\\Contracts\\' => 
         array (
@@ -162,11 +157,11 @@ class ComposerStaticInit973742a25df6072f8a2b92330650238f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit973742a25df6072f8a2b92330650238f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit973742a25df6072f8a2b92330650238f::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit973742a25df6072f8a2b92330650238f::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit973742a25df6072f8a2b92330650238f::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit973742a25df6072f8a2b92330650238f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2e3db11dd6a449f0058f74dc8ee1c5e5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2e3db11dd6a449f0058f74dc8ee1c5e5::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit2e3db11dd6a449f0058f74dc8ee1c5e5::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit2e3db11dd6a449f0058f74dc8ee1c5e5::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit2e3db11dd6a449f0058f74dc8ee1c5e5::$classMap;
 
         }, null, ClassLoader::class);
     }

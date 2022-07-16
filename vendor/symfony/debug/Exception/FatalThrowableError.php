@@ -22,13 +22,13 @@ class FatalThrowableError extends FatalErrorException
     {
         if ($e instanceof \ParseError) {
             $message = 'Parse error: '.$e->getMessage();
-            $severity = \E_PARSE;
+            $severity = E_PARSE;
         } elseif ($e instanceof \TypeError) {
             $message = 'Type error: '.$e->getMessage();
-            $severity = \E_RECOVERABLE_ERROR;
+            $severity = E_RECOVERABLE_ERROR;
         } else {
             $message = $e->getMessage();
-            $severity = \E_ERROR;
+            $severity = E_ERROR;
         }
 
         \ErrorException::__construct(
@@ -36,8 +36,7 @@ class FatalThrowableError extends FatalErrorException
             $e->getCode(),
             $severity,
             $e->getFile(),
-            $e->getLine(),
-            $e->getPrevious()
+            $e->getLine()
         );
 
         $this->setTrace($e->getTrace());

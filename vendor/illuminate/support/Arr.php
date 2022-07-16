@@ -2,24 +2,11 @@
 
 namespace Illuminate\Support;
 
-use ArrayAccess;
-use InvalidArgumentException;
 use Illuminate\Support\Traits\Macroable;
 
 class Arr
 {
     use Macroable;
-
-    /**
-     * Determine whether the given value is array accessible.
-     *
-     * @param  mixed  $value
-     * @return bool
-     */
-    public static function accessible($value)
-    {
-        return is_array($value) || $value instanceof ArrayAccess;
-    }
 
     /**
      * Add an element to an array using "dot" notation if it doesn't exist.
@@ -39,9 +26,31 @@ class Arr
     }
 
     /**
-     * Collapse an array of arrays into a single array.
+     * Build a new array using a callback.
      *
      * @param  array  $array
+     * @param  callable  $callback
+     * @return array
+     *
+     * @deprecated since version 5.2.
+     */
+    public static function build($array, callable $callback)
+    {
+        $results = [];
+
+        foreach ($array as $key => $value) {
+            list($innerKey, $innerValue) = call_user_func($callback, $key, $value);
+
+            $results[$innerKey] = $innerValue;
+        }
+
+        return $results;
+    }
+
+    /**
+     * Collapse an array of arrays into a single array.
+     *
+     * @param  array|\ArrayAccess  $array
      * @return array
      */
     public static function collapse($array)
@@ -51,38 +60,13 @@ class Arr
         foreach ($array as $values) {
             if ($values instanceof Collection) {
                 $values = $values->all();
-            } elseif (! is_array($values)) {
+            }
+
+            if (! is_array($values)) {
                 continue;
             }
 
             $results = array_merge($results, $values);
-        }
-
-        return $results;
-    }
-
-    /**
-     * Cross join the given arrays, returning all possible permutations.
-     *
-     * @param  array  ...$arrays
-     * @return array
-     */
-    public static function crossJoin(...$arrays)
-    {
-        $results = [[]];
-
-        foreach ($arrays as $index => $array) {
-            $append = [];
-
-            foreach ($results as $product) {
-                foreach ($array as $item) {
-                    $product[$index] = $item;
-
-                    $append[] = $product;
-                }
-            }
-
-            $results = $append;
         }
 
         return $results;
@@ -111,7 +95,7 @@ class Arr
         $results = [];
 
         foreach ($array as $key => $value) {
-            if (is_array($value) && ! empty($value)) {
+            if (is_array($value)) {
                 $results = array_merge($results, static::dot($value, $prepend.$key.'.'));
             } else {
                 $results[$prepend.$key] = $value;
@@ -122,7 +106,7 @@ class Arr
     }
 
     /**
-     * Get all of the given array except for a specified array of keys.
+     * Get all of the given array except for a specified array of items.
      *
      * @param  array  $array
      * @param  array|string  $keys
@@ -136,43 +120,17 @@ class Arr
     }
 
     /**
-     * Determine if the given key exists in the provided array.
-     *
-     * @param  \ArrayAccess|array  $array
-     * @param  string|int  $key
-     * @return bool
-     */
-    public static function exists($array, $key)
-    {
-        if ($array instanceof ArrayAccess) {
-            return $array->offsetExists($key);
-        }
-
-        return array_key_exists($key, $array);
-    }
-
-    /**
      * Return the first element in an array passing a given truth test.
      *
      * @param  array  $array
-     * @param  callable|null  $callback
+     * @param  callable  $callback
      * @param  mixed  $default
      * @return mixed
      */
-    public static function first($array, callable $callback = null, $default = null)
+    public static function first($array, callable $callback, $default = null)
     {
-        if (is_null($callback)) {
-            if (empty($array)) {
-                return value($default);
-            }
-
-            foreach ($array as $item) {
-                return $item;
-            }
-        }
-
         foreach ($array as $key => $value) {
-            if (call_user_func($callback, $value, $key)) {
+            if (call_user_func($callback, $key, $value)) {
                 return $value;
             }
         }
@@ -184,17 +142,13 @@ class Arr
      * Return the last element in an array passing a given truth test.
      *
      * @param  array  $array
-     * @param  callable|null  $callback
+     * @param  callable  $callback
      * @param  mixed  $default
      * @return mixed
      */
-    public static function last($array, callable $callback = null, $default = null)
+    public static function last($array, callable $callback, $default = null)
     {
-        if (is_null($callback)) {
-            return empty($array) ? value($default) : end($array);
-        }
-
-        return static::first(array_reverse($array, true), $callback, $default);
+        return static::first(array_reverse($array), $callback, $default);
     }
 
     /**
@@ -206,21 +160,21 @@ class Arr
      */
     public static function flatten($array, $depth = INF)
     {
-        $result = [];
-
-        foreach ($array as $item) {
+        return array_reduce($array, function ($result, $item) use ($depth) {
             $item = $item instanceof Collection ? $item->all() : $item;
 
-            if (! is_array($item)) {
-                $result[] = $item;
-            } elseif ($depth === 1) {
-                $result = array_merge($result, array_values($item));
-            } else {
-                $result = array_merge($result, static::flatten($item, $depth - 1));
-            }
-        }
+            if (is_array($item)) {
+                if ($depth === 1) {
+                    return array_merge($result, $item);
+                }
 
-        return $result;
+                return array_merge($result, static::flatten($item, $depth - 1));
+            }
+
+            $result[] = $item;
+
+            return $result;
+        }, []);
     }
 
     /**
@@ -241,13 +195,6 @@ class Arr
         }
 
         foreach ($keys as $key) {
-            // if the exact key exists in the top-level, remove it
-            if (static::exists($array, $key)) {
-                unset($array[$key]);
-
-                continue;
-            }
-
             $parts = explode('.', $key);
 
             // clean up before each pass
@@ -270,77 +217,55 @@ class Arr
     /**
      * Get an item from an array using "dot" notation.
      *
-     * @param  \ArrayAccess|array  $array
+     * @param  array   $array
      * @param  string  $key
      * @param  mixed   $default
      * @return mixed
      */
     public static function get($array, $key, $default = null)
     {
-        if (! static::accessible($array)) {
-            return value($default);
-        }
-
         if (is_null($key)) {
             return $array;
         }
 
-        if (static::exists($array, $key)) {
+        if (isset($array[$key])) {
             return $array[$key];
         }
 
-        if (strpos($key, '.') === false) {
-            return $array[$key] ?? value($default);
-        }
-
         foreach (explode('.', $key) as $segment) {
-            if (static::accessible($array) && static::exists($array, $segment)) {
-                $array = $array[$segment];
-            } else {
+            if (! is_array($array) || ! array_key_exists($segment, $array)) {
                 return value($default);
             }
+
+            $array = $array[$segment];
         }
 
         return $array;
     }
 
     /**
-     * Check if an item or items exist in an array using "dot" notation.
+     * Check if an item exists in an array using "dot" notation.
      *
-     * @param  \ArrayAccess|array  $array
-     * @param  string|array  $keys
+     * @param  array   $array
+     * @param  string  $key
      * @return bool
      */
-    public static function has($array, $keys)
+    public static function has($array, $key)
     {
-        if (is_null($keys)) {
+        if (empty($array) || is_null($key)) {
             return false;
         }
 
-        $keys = (array) $keys;
-
-        if (! $array) {
-            return false;
+        if (array_key_exists($key, $array)) {
+            return true;
         }
 
-        if ($keys === []) {
-            return false;
-        }
-
-        foreach ($keys as $key) {
-            $subKeyArray = $array;
-
-            if (static::exists($array, $key)) {
-                continue;
+        foreach (explode('.', $key) as $segment) {
+            if (! is_array($array) || ! array_key_exists($segment, $array)) {
+                return false;
             }
 
-            foreach (explode('.', $key) as $segment) {
-                if (static::accessible($subKeyArray) && static::exists($subKeyArray, $segment)) {
-                    $subKeyArray = $subKeyArray[$segment];
-                } else {
-                    return false;
-                }
-            }
+            $array = $array[$segment];
         }
 
         return true;
@@ -376,7 +301,7 @@ class Arr
     /**
      * Pluck an array of values from an array.
      *
-     * @param  array  $array
+     * @param  array|\ArrayAccess  $array
      * @param  string|array  $value
      * @param  string|array|null  $key
      * @return array
@@ -397,10 +322,6 @@ class Arr
                 $results[] = $itemValue;
             } else {
                 $itemKey = data_get($item, $key);
-
-                if (is_object($itemKey) && method_exists($itemKey, '__toString')) {
-                    $itemKey = (string) $itemKey;
-                }
 
                 $results[$itemKey] = $itemValue;
             }
@@ -462,46 +383,6 @@ class Arr
     }
 
     /**
-     * Get one or a specified number of random values from an array.
-     *
-     * @param  array  $array
-     * @param  int|null  $number
-     * @return mixed
-     *
-     * @throws \InvalidArgumentException
-     */
-    public static function random($array, $number = null)
-    {
-        $requested = is_null($number) ? 1 : $number;
-
-        $count = count($array);
-
-        if ($requested > $count) {
-            throw new InvalidArgumentException(
-                "You requested {$requested} items, but there are only {$count} items available."
-            );
-        }
-
-        if (is_null($number)) {
-            return $array[array_rand($array)];
-        }
-
-        if ((int) $number === 0) {
-            return [];
-        }
-
-        $keys = array_rand($array, $number);
-
-        $results = [];
-
-        foreach ((array) $keys as $key) {
-            $results[] = $array[$key];
-        }
-
-        return $results;
-    }
-
-    /**
      * Set an array item to a given value using "dot" notation.
      *
      * If no key is given to the method, the entire array will be replaced.
@@ -538,26 +419,13 @@ class Arr
     }
 
     /**
-     * Shuffle the given array and return the result.
+     * Sort the array using the given callback.
      *
      * @param  array  $array
+     * @param  callable  $callback
      * @return array
      */
-    public static function shuffle($array)
-    {
-        shuffle($array);
-
-        return $array;
-    }
-
-    /**
-     * Sort the array using the given callback or "dot" notation.
-     *
-     * @param  array  $array
-     * @param  callable|string|null  $callback
-     * @return array
-     */
-    public static function sort($array, $callback = null)
+    public static function sort($array, callable $callback)
     {
         return Collection::make($array)->sortBy($callback)->all();
     }
@@ -594,17 +462,14 @@ class Arr
      */
     public static function where($array, callable $callback)
     {
-        return array_filter($array, $callback, ARRAY_FILTER_USE_BOTH);
-    }
+        $filtered = [];
 
-    /**
-     * If the given value is not an array, wrap it in one.
-     *
-     * @param  mixed  $value
-     * @return array
-     */
-    public static function wrap($value)
-    {
-        return ! is_array($value) ? [$value] : $value;
+        foreach ($array as $key => $value) {
+            if (call_user_func($callback, $key, $value)) {
+                $filtered[$key] = $value;
+            }
+        }
+
+        return $filtered;
     }
 }

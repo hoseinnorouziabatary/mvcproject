@@ -1,9 +1,20 @@
 <?php namespace Core;
 
-use mysql_xdevapi\Exception;
+//use mysql_xdevapi\Exception;
+use \Illuminate\Database\Eloquent\Model as Eloquent;
 
-abstract class Model
+abstract class Model extends Eloquent
 {
+    //Model
+
+
+
+
+
+    /*
+     *Code about the topic of the model manually
+     *
+     *
     protected $pdo;
     protected $tableName =null;
 
@@ -24,9 +35,7 @@ abstract class Model
 
     }
 
-    /**
-     * @throws \Exception
-     */
+
     public function SelectAll()
     {
         if (is_null($this->tableName)){
@@ -39,9 +48,7 @@ abstract class Model
 
     }
 
-    /**
-     * @throws \Exception
-     */
+
     protected function checkTable()
     {
         $stmt = $this->pdo->prepare("SHOW TABLES LIKE '{$this->tableName}'");
@@ -50,6 +57,6 @@ abstract class Model
             throw new \Exception("{$this->tableName} Table not exists");
 
     }
-
+*/
 
 }

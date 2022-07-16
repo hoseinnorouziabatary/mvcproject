@@ -1,9 +1,16 @@
 <?php namespace App\Models;
 
 use Core\Model;
+//use PDO;
 
 class User extends Model
 {
+    protected $table = 'users';
+
+
+
+    /*Code about the topic of the model manually
+     *
     protected $tableName = "users";
 
     public function findUser($id)
@@ -13,5 +20,6 @@ class User extends Model
         $stmt->execute();
         return $stmt->fetch(\PDO::FETCH_OBJ);
     }
+    */
 
 }
