@@ -4,12 +4,26 @@ use \Illuminate\Database\Capsule\Manager as Capsule;
 
 $capsule = new Capsule();
 
+//var_dump(env('DB_DATABASE'));die();
 
 $capsule->addConnection([
 
+
+/*  code for file .env about phpdotenv
+    */
+    'driver'=>env('DB_CONNECTION'),
+    'host'=>env('DB_HOST'),
+    'port'=>env('DB_PORT'),
+    'database'=>env('DB_DATABASE'),
+    'username'=>env('DB_USERNAME'),
+    'password'=>env('DB_PASSWORD'),
+    'charset'=>'utf8',
+    'collation'=>'utf8_unicode_ci'
+
+
     /*
-     * code for file .env
-     */
+     * code for file .env about phpdotenv
+     *
     'driver'=>getenv('DB_CONNECTION'),
     'host'=>getenv('DB_HOST'),
     'port'=>getenv('DB_PORT'),
@@ -18,6 +32,7 @@ $capsule->addConnection([
     'password'=>getenv('DB_PASSWORD'),
     'charset'=>'utf8',
     'collation'=>'utf8_unicode_ci'
+    */
 
 
 

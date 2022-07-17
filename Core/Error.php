@@ -27,7 +27,11 @@ class Error
          * about config manually -const
          *  if(Config::SHOW_DEBUG)
          */
-        if(getenv('APP_DEBUG')){
+        /*
+         * about phpdotenv
+         * getenv('APP_DEBUG')
+         */
+        if(env('APP_DEBUG',false)){
             echo "<h1>Fatal error</h1>";
             echo "<p>Uncaught exception: '" . get_class($exception) . "'</p>";
             echo "<p>Message : '" . $exception->getMessage() . "'</p>";
