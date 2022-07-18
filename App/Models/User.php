@@ -3,6 +3,7 @@
 use Core\Model;
 //use PDO;
 
+// use Model class illuminate
 class User extends Model
 {
     protected $table = 'users';
