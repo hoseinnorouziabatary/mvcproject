@@ -19,7 +19,7 @@ class SeriesController extends Controller
          *  return View::render("series/episode",[
          */
 
-        //  code view blade
+        //  code view for blade
         return View::renderTemplate("series.episode",[
             "slug"=> $slug,
             "id"=>$id
