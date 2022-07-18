@@ -18,6 +18,8 @@ class SeriesController extends Controller
          * code view manual
          *  return View::render("series/episode",[
          */
+
+        //  code view blade
         return View::renderTemplate("series.episode",[
             "slug"=> $slug,
             "id"=>$id
